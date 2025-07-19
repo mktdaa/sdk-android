@@ -3,10 +3,9 @@ workflows:
     name: Build Bridgefy Example
     max_build_duration: 60
     environment:
-      android:
-        image: latest
       vars:
         JAVA_VERSION: 17
+      flutter: stable  # لتفعيل صورة تحتوي على Android SDK حتى لو لم تستخدم Flutter
     scripts:
       - name: Clean project
         script: |
