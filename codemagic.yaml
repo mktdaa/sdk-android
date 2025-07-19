@@ -1,0 +1,27 @@
+workflows:
+  android-example-build:
+    name: Build Bridgefy Example
+    max_build_duration: 60
+    environment:
+      android:
+        image: latest
+      vars:
+        JAVA_VERSION: 17
+    scripts:
+      - name: Clean project
+        script: |
+          cd examples/bridgefy-alerts
+          ./gradlew clean
+
+      - name: Build debug APK
+        script: |
+          cd examples/bridgefy-alerts
+          ./gradlew :app:assembleDebug
+
+      - name: Build release APK
+        script: |
+          cd examples/bridgefy-alerts
+          ./gradlew :app:assembleRelease
+
+    artifacts:
+      - examples/bridgefy-alerts/app/build/outputs/**/*.apk
