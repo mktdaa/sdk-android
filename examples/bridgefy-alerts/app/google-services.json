@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "645211545233",
+    "project_id": "blut-ee522",
+    "storage_bucket": "blut-ee522.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645211545233:android:d0cc8d6f1dc2d10ac56930",
+        "android_client_info": {
+          "package_name": "me.bridgefy.example.android.alerts"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgDa1UA4q82aBvZ6ZPNNM5ghWZ2SaJ6Dg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
